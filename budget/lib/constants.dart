@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-const kPrimaryColor = Color.fromARGB(255, 74, 129, 238);
-const kPrimaryLightColor = Color.fromARGB(255, 229, 194, 166);
+const kPrimaryColor = Color.fromARGB(255, 88, 144, 255);
+const kPrimaryLightColor = Color.fromARGB(255, 179, 151, 128);
 
-const double defaultPadding = 16.0;
