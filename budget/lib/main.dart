@@ -1,22 +1,21 @@
-//import 'dart:ui';
-
-// ignore_for_file: prefer_const_constructors
-
 import 'package:flutter/material.dart';
-import 'package:budget/screens/login.dart';
-import 'package:budget/screens/registration.dart';
-import 'package:budget/constants.dart';
-void main() {
-  runApp(MaterialApp(
-    debugShowCheckedModeBanner: false,
-    home: Welcome(),
-  ));
+import 'package:budget/screens/onboardingScreens/introduction_screen.dart';
+
+void main() async {
+  runApp(const MyApp());
 }
- class Welcome extends StatelessWidget {
-   const Welcome({super.key});
- 
-   @override
-   Widget build(BuildContext context) {
-     return Container();
-   }
- }
+
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+        title: 'Travel Budget',
+        debugShowCheckedModeBanner: false,
+        theme: ThemeData(
+          primarySwatch: kPrimaryColor,
+        ),
+        home: const IntroductionScreens());
+  }
+}
