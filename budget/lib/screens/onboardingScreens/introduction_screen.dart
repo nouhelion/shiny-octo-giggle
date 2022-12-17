@@ -1,3 +1,6 @@
+// ignore_for_file: prefer_const_constructors, depend_on_referenced_packages
+
+import 'package:budget/screens/signScreens/login.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:introduction_screen/introduction_screen.dart';
@@ -28,8 +31,8 @@ class IntroductionScreens extends StatelessWidget {
             ),
           ],
           onDone: () {
-            if (kDebugMode) {
-              print("Done clicked");
+              if (kDebugMode) {
+              
             }
           },
           //ClampingScrollPhysics prevent the scroll offset from exceeding the bounds of the content.
