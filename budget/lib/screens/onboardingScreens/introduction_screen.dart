@@ -12,22 +12,16 @@ class IntroductionScreens extends StatelessWidget {
       body: IntroductionScreen(
           pages: [
             PageViewModel(
-              title: 'Title of 1st Page',
-              body: 'Body of 1st Page',
-              image: buildImage("assets/images/onboarding0.png"),
-              //getPageDecoration, a method to customise the page style
-              decoration: getPageDecoration(),
-            ),
-            PageViewModel(
               title: 'Title of 2nd Page',
-              body: 'Body of 2nd Page',
+              body:
+                  'Une budget indique à votre argent où aller au lieu de se demander où il est allé.',
               image: buildImage("assets/images/onboarding1.png"),
               //getPageDecoration, a method to customise the page style
               decoration: getPageDecoration(),
             ),
             PageViewModel(
               title: 'Title of 3rd Page',
-              body: 'Body of 3rd Page',
+              body: 'Planifiez vos dépenses de voyage de manière numérique',
               image: buildImage("assets/images/onboarding2.png"),
               //getPageDecoration, a method to customise the page style
               decoration: getPageDecoration(),
@@ -42,13 +36,10 @@ class IntroductionScreens extends StatelessWidget {
           scrollPhysics: const ClampingScrollPhysics(),
           showDoneButton: true,
           showNextButton: true,
-          showSkipButton: true,
           isBottomSafeArea: true,
-          skip:
-              const Text("Skip", style: TextStyle(fontWeight: FontWeight.w600)),
           next: const Icon(Icons.forward),
-          done:
-              const Text("Done", style: TextStyle(fontWeight: FontWeight.w600)),
+          done: const Text("Commencez",
+              style: TextStyle(fontWeight: FontWeight.w600)),
           dotsDecorator: getDotsDecorator()),
     );
   }
@@ -58,8 +49,8 @@ class IntroductionScreens extends StatelessWidget {
     return Center(
         child: Image.asset(
       imagePath,
-      width: 450,
-      height: 200,
+      width: 650,
+      height: 400,
     ));
   }
 

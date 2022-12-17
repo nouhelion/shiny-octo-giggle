@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
         title: 'Travel Budget',
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
-          primarySwatch: kPrimaryColor,
+          primarySwatch: Colors.indigo,
         ),
         home: const IntroductionScreens());
   }
