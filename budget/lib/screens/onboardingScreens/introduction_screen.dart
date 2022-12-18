@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, depend_on_referenced_packages
+// ignore_for_file: prefer_const_constructors, depend_on_referenced_packages, unused_import
 
 import 'package:budget/screens/signScreens/login.dart';
 import 'package:flutter/foundation.dart';
