@@ -1,6 +1,5 @@
 // ignore_for_file: unused_import, unnecessary_new, prefer_const_constructors, prefer_const_literals_to_create_immutables, avoid_unnecessary_containers, sized_box_for_whitespace, unused_element, unused_field, prefer_final_fields, prefer_interpolation_to_compose_strings
 
-import 'package:budget/screens/signScreens/login.dart';
 import 'package:budget/screens/signScreens/register.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
